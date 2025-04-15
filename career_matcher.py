@@ -3,6 +3,49 @@ import streamlit as st
 from collections import Counter
 
 st.set_page_config(page_title="Career Matcher", page_icon="🧠", layout="centered")
+st.markdown("""
+    <style>
+        body {
+            background-color: #f5f7fa;
+        }
+        .stApp {
+            background-image: linear-gradient(to right, #e3f2fd, #ffffff);
+            font-family: 'Segoe UI', sans-serif;
+            color: #333333;
+            padding: 20px;
+        }
+        .title {
+            font-size: 42px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 22px;
+            color: #7f8c8d;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .stButton>button {
+            background-color: #2ecc71;
+            color: white;
+            border-radius: 12px;
+            padding: 0.6em 1.5em;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .stButton>button:hover {
+            background-color: #27ae60;
+            transform: scale(1.05);
+        }
+        .stTextInput>div>div>input {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 0.5em;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 st.markdown("""
     <style>
