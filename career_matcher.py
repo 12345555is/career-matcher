@@ -5,11 +5,8 @@ from collections import Counter
 st.set_page_config(page_title="Career Matcher", page_icon="🧠", layout="centered")
 st.markdown("""
     <style>
-        body {
-            background-color: #f5f7fa;
-        }
         .stApp {
-            background-image: linear-gradient(to right, #e3f2fd, #ffffff);
+            background: linear-gradient(to right, #f0f4f8, #ffffff);
             font-family: 'Segoe UI', sans-serif;
             color: #333333;
             padding: 20px;
@@ -43,6 +40,13 @@ st.markdown("""
             background-color: #ffffff;
             border-radius: 10px;
             padding: 0.5em;
+        }
+        .box {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+            margin-top: 20px;
         }
     </style>
 """, unsafe_allow_html=True)
